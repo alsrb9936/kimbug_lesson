@@ -5,6 +5,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: #000;
 }
 
 h1 {
@@ -15,3 +16,47 @@ h1 {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+.user-card {
+  max-width:250px;
+  padding: 8px 12px;
+  border: 1px solid #E5EAEF;
+  border-radius: 4px;
+  background-color: #fff;
+} 
+.user-card::after{
+  content: '';
+  display: block;
+  clear:left;
+}
+.user-photo,
+.user-name {
+  float: left;
+}
+
+.user-name {
+  padding:8px 0;
+}
+
+.user-photo{
+  margin-right: 8px;
+  position:relative;
+}
+
+.profile {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-status {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-sizing: content-box;
+  background-color:#21D891;
+}
